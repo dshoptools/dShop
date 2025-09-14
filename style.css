@@ -1,15 +1,18 @@
 /* Add a scroll-margin-top to offset the sticky header */
 #tools, #features, footer {
-    scroll-margin-top: 70px; /* Adjust this value based on your header's height */
+    scroll-margin-top: 70px;
 }
 
-/* CSS for the mobile menu animation */
+/* --- Mobile Menu Fix --- */
+/* This ensures the menu is hidden by default and animates smoothly */
 #mobile-menu {
-    transition: max-height 0.4s ease-in-out;
-    max-height: 0;
+    overflow: hidden; /* This is crucial: it clips the content when height is 0 */
+    max-height: 0; /* By default, the menu has no height, making it invisible */
+    transition: max-height 0.4s ease-in-out; /* Animate the height change */
 }
+/* This class is added by JavaScript when the user clicks the menu button */
 #mobile-menu.menu-open {
-    max-height: 500px; /* A value larger than the menu's content height */
+    max-height: 500px; /* Expands the menu to reveal the links */
 }
 
 /* Styles for modal transitions */
