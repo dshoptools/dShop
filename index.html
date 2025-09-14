@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dShop - Multi-Tool Landing Page</title>
-    
     <!-- External Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100 text-gray-800">
 
@@ -71,7 +69,42 @@
                         <p class="text-gray-600 mb-4">Combine multiple PDFs into one.</p>
                         <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
                     </div>
-                    <!-- Add the other 6 tool cards here -->
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-file-image"></i></div>
+                        <h3 class="text-xl font-bold mb-2">JPG to PDF</h3>
+                        <p class="text-gray-600 mb-4">Convert JPG images to PDF.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-file-word"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Word to PDF</h3>
+                        <p class="text-gray-600 mb-4">Convert Word documents to PDF.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-image"></i></div>
+                        <h3 class="text-xl font-bold mb-2">PNG to JPG</h3>
+                        <p class="text-gray-600 mb-4">Convert PNG images to JPG.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-file-excel"></i></div>
+                        <h3 class="text-xl font-bold mb-2">PDF to Excel</h3>
+                        <p class="text-gray-600 mb-4">Convert PDF to Excel spreadsheets.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-file-lines"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Text Extractor</h3>
+                        <p class="text-gray-600 mb-4">Extract text from your files.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-expand"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Resize Image</h3>
+                        <p class="text-gray-600 mb-4">Change the dimensions of your images.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,7 +114,6 @@
             <div class="container mx-auto px-4 sm:px-6">
                 <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
                 <div class="grid md:grid-cols-3 gap-8 text-center">
-                    <!-- Feature Cards... -->
                     <div class="p-6">
                         <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-bolt"></i></div>
                         <h3 class="text-xl font-bold mb-2">Fast & Free</h3>
@@ -137,7 +169,7 @@
             </div>
             <div class="p-6 overflow-y-auto">
                 <p class="text-gray-600 leading-relaxed">
-                    Welcome to dShop... [Full text here]
+                    Welcome to dShop, your friendly neighborhood hub for simple and effective file utilities. Our mission is to make document management accessible to everyone, everywhere. We believe that you shouldn't need complicated software or expensive subscriptions to perform essential tasks like compressing a PDF or converting an image. That's why we created a suite of fast, free, and secure browser-based tools. We are dedicated to providing a seamless experience with a focus on privacy and ease of use.
                 </p>
             </div>
         </div>
@@ -155,15 +187,15 @@
                     <div class="space-y-4">
                         <div>
                             <label for="name" class="block text-left font-medium text-gray-700">Name</label>
-                            <input type="text" id="name" name="name" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition" required>
+                            <input type="text" id="name" name="name" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition duration-150" required>
                         </div>
                         <div>
                             <label for="email" class="block text-left font-medium text-gray-700">Email</label>
-                            <input type="email" id="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition" required>
+                            <input type="email" id="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition duration-150" required>
                         </div>
                         <div>
                             <label for="message" class="block text-left font-medium text-gray-700">Message</label>
-                            <textarea id="message" name="message" rows="4" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition" required></textarea>
+                            <textarea id="message" name="message" rows="4" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition duration-150" required></textarea>
                         </div>
                         <div>
                             <button type="submit" class="w-full bg-blue-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-600 transition-colors">
@@ -176,7 +208,7 @@
         </div>
     </div>
 
-    <!-- Your Custom JavaScript -->
+    <!-- Your Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
