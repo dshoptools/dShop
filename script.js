@@ -11,7 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            mobileMenu.classList.remove('menu-open'); // Close menu on click
+            // Close the mobile menu when any link is clicked
+            if (mobileMenu.classList.contains('menu-open')) {
+                mobileMenu.classList.remove('menu-open');
+            }
+            
             const targetId = this.getAttribute('href');
             // Use 'body' for a href="#" link to scroll to the top
             const targetElement = document.querySelector(targetId === '#' ? 'body' : targetId);
@@ -52,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
         trigger.addEventListener('click', () => {
             const modalId = trigger.getAttribute('data-modal-trigger');
             openModal(modalId);
-            mobileMenu.classList.remove('menu-open');
         });
     });
 
