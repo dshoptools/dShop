@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dShop - Multi-Tool Landing Page</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 text-2xl font-bold text-gray-800">
+                <!-- SVG "Shop" Logo -->
+                <svg class="h-8 w-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5A.75.75 0 0114.25 12h.75c.414 0 .75.336.75.75v7.5m-7.5-7.5h1.5v7.5h-1.5v-7.5zm9 0h1.5v7.5h-1.5v-7.5zM3 13.5v7.5a.75.75 0 00.75.75h16.5a.75.75 0 00.75-.75v-7.5zm-3-4.5h21a.75.75 0 00.75-.75V6.75a.75.75 0 00-.75-.75H2.25a.75.75 0 00-.75.75v1.5c0 .414.336.75.75.75zM3 9a2.25 2.25 0 00-2.25 2.25v1.5a2.25 2.25 0 002.25 2.25h18a2.25 2.25 0 002.25-2.25v-1.5A2.25 2.25 0 0021 9H3z" />
+                </svg>
+                <span>dShop</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#tools" class="text-gray-600 hover:text-blue-500">Tools</a>
+                <a href="#footer" class="text-gray-600 hover:text-blue-500">About</a>
+                <a href="#footer" class="text-gray-600 hover:text-blue-500">Contact</a>
+            </div>
+            <div class="flex items-center">
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-500 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden px-6">
+            <a href="#tools" class="block py-2 text-gray-600 hover:text-blue-500">Tools</a>
+            <a href="#footer" class="block py-2 text-gray-600 hover:text-blue-500">About</a>
+            <a href="#footer" class="block py-2 text-gray-600 hover:text-blue-500">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-blue-50 py-20">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800">All Your File Tools in One Place</h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">A suite of online tools to handle your files with ease and security.</p>
+                <a href="#tools" class="mt-8 inline-block bg-blue-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-600 transition-colors">Explore Tools</a>
+            </div>
+        </section>
+
+        <!-- Tools Grid Section -->
+        <section id="tools" class="py-20">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Tools</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Tool Cards... -->
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-file-zipper"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Compress PDF</h3>
+                        <p class="text-gray-600 mb-4">Reduce the file size of your PDF.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-object-group"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Merge PDF</h3>
+                        <p class="text-gray-600 mb-4">Combine multiple PDFs into one.</p>
+                        <a href="#" class="inline-block bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Use Tool</a>
+                    </div>
+                    <!-- Add the other 6 tool cards here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Features/Why Choose Us Section -->
+        <section id="features" class="bg-white py-20">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Feature Cards... -->
+                    <div class="p-6">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-bolt"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Fast & Free</h3>
+                        <p class="text-gray-600">Our tools are quick and completely free to use, with no hidden fees.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-lock"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Secure</h3>
+                        <p class="text-gray-600">Your files are safe with us and are deleted after a short period.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h3 class="text-xl font-bold mb-2">No Installation</h3>
+                        <p class="text-gray-600">All tools work in your browser, no software to install.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-200 py-12">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <div class="grid sm:grid-cols-2 gap-8 mb-8">
+                <div class="text-center sm:text-left">
+                    <h4 class="font-bold text-lg mb-4">Company</h4>
+                    <ul>
+                        <li><a href="javascript:void(0);" data-modal-trigger="about" class="text-gray-600 hover:text-blue-500">About Us</a></li>
+                        <li><a href="javascript:void(0);" data-modal-trigger="contact" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="text-center sm:text-left">
+                    <h4 class="font-bold text-lg mb-4">Tools</h4>
+                    <ul>
+                        <li><a href="#tools" class="text-gray-600 hover:text-blue-500">Compress PDF</a></li>
+                        <li><a href="#tools" class="text-gray-600 hover:text-blue-500">Merge PDF</a></li>
+                        <li><a href="#tools" class="text-gray-600 hover:text-blue-500">More...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-6 text-gray-600">
+                <p>&copy; 2025 dShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- About Us Modal -->
+    <div id="about-modal" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50 p-4" style="opacity: 0;">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg max-h-[95vh] flex flex-col">
+            <div class="flex justify-between items-center p-6 border-b">
+                <h2 class="text-2xl font-bold">About dShop</h2>
+                <button data-modal-close="about" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            </div>
+            <div class="p-6 overflow-y-auto">
+                <p class="text-gray-600 leading-relaxed">
+                    Welcome to dShop... [Full text here]
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div id="contact-modal" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50 p-4" style="opacity: 0;">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg max-h-[95vh] flex flex-col">
+            <div class="flex justify-between items-center p-6 border-b">
+                <h2 class="text-2xl font-bold">Contact Us</h2>
+                <button data-modal-close="contact" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            </div>
+            <div class="p-6 overflow-y-auto">
+                <form action="#" method="POST">
+                    <div class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-left font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-left font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-left font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm transition" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-600 transition-colors">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
