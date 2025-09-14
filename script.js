@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             mobileMenu.classList.remove('menu-open'); // Close menu on click
             const targetId = this.getAttribute('href');
-            // Use 'body' for '#' to scroll to top, otherwise use the target element
+            // Use 'body' for a href="#" link to scroll to the top
             const targetElement = document.querySelector(targetId === '#' ? 'body' : targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: 'smooth' });
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 modal.style.opacity = '1';
                 document.body.style.overflow = 'hidden'; // Prevent background scrolling
-            }, 10); // A small delay to allow the display property to apply before transitioning
+            }, 10);
         }
     };
 
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 modal.classList.add('hidden');
                 document.body.style.overflow = 'auto'; // Restore scrolling
-            }, 300); // Must match the CSS transition duration
+            }, 300); // Match transition duration
         }
     };
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         trigger.addEventListener('click', () => {
             const modalId = trigger.getAttribute('data-modal-trigger');
             openModal(modalId);
-            mobileMenu.classList.remove('menu-open'); // Close mobile menu if a modal is opened
+            mobileMenu.classList.remove('menu-open');
         });
     });
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Close modal by clicking on the dark overlay background
+    // Close modal by clicking on the overlay
     modals.forEach(modal => {
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Close modal with the Escape key for better accessibility
+    // Close modal with the Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === "Escape") {
             modals.forEach(modal => {
