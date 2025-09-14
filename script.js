@@ -11,13 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            // Close the mobile menu when any link is clicked
+            // Close the mobile menu when any link inside it is clicked
             if (mobileMenu.classList.contains('menu-open')) {
                 mobileMenu.classList.remove('menu-open');
             }
             
             const targetId = this.getAttribute('href');
-            // Use 'body' for a href="#" link to scroll to the top
             const targetElement = document.querySelector(targetId === '#' ? 'body' : targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: 'smooth' });
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 modal.classList.add('hidden');
                 document.body.style.overflow = 'auto'; // Restore scrolling
-            }, 300); // Match transition duration
+            }, 300);
         }
     };
 
