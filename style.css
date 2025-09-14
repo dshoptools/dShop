@@ -5,16 +5,11 @@
 
 /* CSS for the mobile menu animation */
 #mobile-menu {
-    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
     max-height: 0;
-    overflow: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 #mobile-menu.menu-open {
     max-height: 500px; /* A value larger than the menu's content height */
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
 }
 
 /* Styles for modal transitions */
